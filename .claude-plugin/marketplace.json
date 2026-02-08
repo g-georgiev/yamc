@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "yamc",
+  "description": "Self-improving memory for Claude Code with short-term capture, curated long-term memory, and evolutionary weekly reflection.",
+  "owner": {
+    "name": "Georgi"
+  },
+  "plugins": [
+    {
+      "name": "yamc",
+      "description": "Yet Another Memory for Claude — self-improving memory with write gate, reflect cycle, and git-versioned history.",
+      "version": "0.1.0",
+      "source": ".",
+      "category": "productivity"
+    }
+  ]
+}
