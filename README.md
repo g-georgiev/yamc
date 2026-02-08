@@ -145,19 +145,22 @@ This removes the scheduler (systemd/launchd/cron) and optionally deletes `~/.cla
 ## File Structure
 
 ```
-yamc/                             # Plugin root
+yamc/                             # Repo root (marketplace)
 ├── .claude-plugin/
-│   ├── plugin.json               # Plugin manifest
 │   └── marketplace.json          # Marketplace manifest
-├── hooks/
-│   ├── hooks.json                # Hook configuration
-│   ├── session-start.sh          # Injects longterm.md at session start
-│   └── pre-compact.sh            # Commits memory changes before compaction
-├── rules/
-│   └── memory-protocol.md        # Memory behavior protocol (auto-loaded)
-├── skills/
-│   └── remember/
-│       └── SKILL.md              # /remember slash command
+├── plugins/
+│   └── yamc/                     # Plugin root
+│       ├── .claude-plugin/
+│       │   └── plugin.json       # Plugin manifest
+│       ├── hooks/
+│       │   ├── hooks.json        # Hook configuration
+│       │   ├── session-start.sh  # Injects longterm.md at session start
+│       │   └── pre-compact.sh    # Commits memory changes before compaction
+│       ├── rules/
+│       │   └── memory-protocol.md  # Memory behavior protocol (auto-loaded)
+│       └── skills/
+│           └── remember/
+│               └── SKILL.md      # /remember slash command
 ├── reflect.sh                    # Weekly evaluation script (runs via systemd/launchd)
 ├── install.sh                    # One-time setup (~/.claude-memory + scheduler)
 ├── uninstall.sh                  # Removes scheduler and optionally ~/.claude-memory

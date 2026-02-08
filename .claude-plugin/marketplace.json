@@ -10,7 +10,7 @@
       "name": "yamc",
       "description": "Yet Another Memory for Claude — self-improving memory with write gate, reflect cycle, and git-versioned history.",
       "version": "0.1.0",
-      "source": ".",
+      "source": "./plugins/yamc",
       "category": "productivity"
     }
   ]
