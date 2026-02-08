@@ -1,6 +1,5 @@
 {
   "name": "yamc",
   "version": "0.1.0",
-  "description": "YAMC — Yet Another Memory for Claude. Self-improving memory with short-term capture, curated long-term memory, and evolutionary evaluation through collaborative weekly reflection.",
-  "entryPoint": "rules/memory-protocol.md"
+  "description": "YAMC — Yet Another Memory for Claude. Self-improving memory with short-term capture, curated long-term memory, and evolutionary evaluation through collaborative weekly reflection."
 }
